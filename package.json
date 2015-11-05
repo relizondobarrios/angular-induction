@@ -1,0 +1,19 @@
+{
+  "name": "angular-induction",
+  "version": "1.0.0",
+  "description": "Practical AngularJS induction",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/relizondobarrios/angular-induction"
+  },
+  "author": "Raquel Elizondo Barrios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/relizondobarrios/angular-induction/issues"
+  },
+  "homepage": "https://github.com/relizondobarrios/angular-induction",
+  "dependencies": {
+    "angular": "^1.4.7"
+  }
+}
