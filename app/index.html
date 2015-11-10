@@ -7,12 +7,41 @@
   <title>Pracical AngularJS Induction</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
   <body ng-app="induction">
-    <div>HOLA</div>
+    <div class="container">
+      <div class="row text-center" id="header-title">
+        <h1>Inducción Práctica a AngularJS<br />
+          <small>Raquel Elizondo Barrios</small>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4" ui-view="wrapper-menu">
+          
+        </div>
+      
+        <div class="col-md-8" ui-view="wrapper-container">
+          <div class="panel panel-default" id="lession-container">
+            <div class="panel-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   
-  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-route/angular-route.min.js"></script>
+  <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  
+  <script src="js/window.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
