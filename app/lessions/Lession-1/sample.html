@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>induccion-angular app: descargar angular-seed [1]</h3>
+		<p>
+			<ul>
+				<li>Crearemos una carpeta donde vamos a guardar la aplicación.</li>
+				<strong>induccion-angular</strong>
+				<li>Abrimos una línea de comandos desde esta carpeta, y bajamos AngularJS seed mediante GIT.</li>
+				<strong>git clone --depth=1 https://github.com/angular/angular-seed.git induccion-angular</strong>
+				<li>Una vez clonado el repositorio, vamos a hacer:</li>
+				<strong>cd induccion-angular</strong>
+				<strong>npm install</strong>
+				<li>Una vez que este proceso termine, haremos:</li>
+				<strong>npm start</strong>
+			</ul>
+		</p>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>induccion-angular app: crear módulo [2]</h3>
+		<p>
+			<ul>
+				<li>Dentro de la carpeta induccion-angular vamos a encontrar una carpeta llamada ‘app’ en esta carpeta están todos los archivos relacionados con una aplicación Angular.</li>
+				<li>Para empezar un proyecto en Angular debemos crear un módulo que corresponderá al módulo principal de la aplicación.</li>
+				<strong>var myApp = angular.module(“myApp”, []);</strong>
+				<li>Ahora bien, definiendo este nombre para el módulo principal, vamos al HTML y en la etiqueta body agregamos:</li>
+				<strong> < body ng-app=”myApp”> </ body ></strong>
+			</ul>
+		</p>
+	</div>
+</div>

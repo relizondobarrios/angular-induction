@@ -1,0 +1,10 @@
+<h3>Best practices</h3>
+	<ul>
+		<li>Nunca se asignan variables directamente al scope, se debe crear un modelo y a este modelo asignar dicha variable o propiedad. </li>
+		<pre class="prettyprint">
+$scope.name = ‘raquel’;
+$scope.user = { name: ‘raquel’ } ; 
+	</pre>
+		<li>La inicialización de variables en el scope se hacen al inicio de los documentos.</li>
+		<li>Los archivos .css se agregan al inicio del documento layout y los archivos js se agregan al final del documento.</li>
+	</ul>

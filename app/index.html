@@ -14,19 +14,34 @@
   <body ng-app="induction">
     <div class="container">
       <div class="row text-center" id="header-title">
-        <h1>Inducción Práctica a AngularJS<br />
-          <small>Raquel Elizondo Barrios</small>
-        </h1>
+         <div class="page-header">
+          <h1>Inducción Práctica a AngularJS<br />
+            <small>Raquel Elizondo Barrios</small>
+          </h1>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-4" ui-view="wrapper-menu">
           
         </div>
       
-        <div class="col-md-8" ui-view="wrapper-container">
-          <div class="panel panel-default" id="lession-container">
+        <div class="col-md-8">
+          <div class="panel panel-default page-height" id="lession-container">
             <div class="panel-body">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active col-md-4"><a data-target="#description" aria-controls="description" role="tab" data-toggle="tab">Descripción</a></li>
+                <li role="presentation" class="col-md-4"><a data-target="#sample" aria-controls="sample" role="tab" data-toggle="tab">Ejemplo</a></li>
+                <li role="presentation" class="col-md-4"><a data-target="#best-practice" aria-controls="best-practice" role="tab" data-toggle="tab">Best Practice</a></li>
+              </ul>
               
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="description" ui-view="wrapper-description">
+                </div>
+			        <div role="tabpanel" class="tab-pane" id="sample" ui-view="wrapper-sample">
+              </div>
+			        <div role="tabpanel" class="tab-pane" id="best-practice" ui-view="wrapper-best-practice">
+              </div>
+		          </div>	
             </div>
           </div>
         </div>

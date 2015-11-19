@@ -1,0 +1,16 @@
+<h3>Funciones autoejecutables</h3>
+<p>
+	Encierra tus segmentos de código con funciones autoejecutables.
+	<pre class="prettyprint">
+&lt;script&gt;
+(function(){ 
+	var myApp = angular.module(“myApp”, []);
+})();
+&lt;/script&gt;
+	</pre>
+	<ul>
+		<li>Enlazamos el objeto devuelto al contexto de ejecución global, no la función en sí misma. Con esto sus propiedades y métodos tienen acceso al resto de variables globales.</li>
+		<li>Admite parámetros a través de su segundo juego de paréntesis.</li>
+		<li>Función invocada devuelve un objeto que represente la interfaz pública para un determinado bloque de código.</li>
+	</ul>
+</p>

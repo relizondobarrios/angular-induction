@@ -1,0 +1,35 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>induccion-angular app: one-way binding  [3]</h3>
+		<p>
+			<ul>
+				<li>Vamos a crear un controlador. Utilizando la variable de la declaración del módulo principal, creamos un controlador. </li>
+				<strong>myApp.controller(‘main_controller’, [‘$scope’, function($scope){ }]);</strong>
+				<li>Ahora bien vamos a crear una variable en el scope que eventualmente vamos a hacer ‘binding’ de ella en la vista.</li>
+				<strong>$scope.user = { name: ‘raquel’ };</strong>
+				<li>En la vista es necesario decir con qué controlador va a trabajar la vista</li>
+				<strong>
+					<pre class="prettyprint">
+&lt;div ng-controller=”main_controller”&gt;
+&lt;/div&gt;
+					</pre>
+				</strong>
+				<li>Dentro del div anterior escribimos:</li>
+				<strong><p> {{user.name}}</p></strong>
+			</ul>
+		</p>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>induccion-angular app: two-way binding  [4]</h3>
+		<p>
+			<ul>
+				<li>En el mismo HTML, vamos a agregar el siguiente input</li>
+					<pre class="prettyprint">
+&lt;input ng-model=”user.name” /&gt;
+					</pre>
+			</ul>
+		</p>
+	</div>
+</div>
