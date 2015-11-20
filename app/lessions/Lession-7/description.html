@@ -1,0 +1,7 @@
+<h3>Scope</h2>	
+<p>
+	El scope es un simple objeto Javascript al cual tienen acceso tanto la vista como el controlador, <b>se considera como el modelo de la vista.</b> Pueden existir uno o más scopes en la aplicación por lo cual tienen una estructura jerárquica mediante la cual se puede tener acceso al padre de cada scope. <b>El scope del módulo principal se denomina $rootScope y lo encierra el atributo ‘ng-app’ en el HTML.</b> 
+	Para comunicar scopes o bien controladores, se debe utilizar un $broadcast y un $on.
+	Se puede representar como la ‘goma’ que comunica la vista con el controlador. Todos las variables, funciones y datos asignados al scope son fácilmente accedidos de la vista mediante el ‘binding’ de los mismo utilizando {{}}.
+	<b>El scope debe mantener asignado el menor número de datos posible. </b>
+</p>

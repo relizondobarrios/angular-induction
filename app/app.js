@@ -42,7 +42,7 @@
 				}			
 			})
 			.state('lession-3', {
-			url: '/lession-2',
+			url: '/lession-3',
 			views:
 				{
 					'wrapper-menu':{
